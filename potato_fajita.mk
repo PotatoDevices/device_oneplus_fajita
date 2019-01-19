@@ -14,20 +14,13 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Maintainer Prop
-PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Ujwal P"
-
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Aosip stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
-PRODUCT_NAME := aosip_fajita
+# Inherit from Potato vendor
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+
+PRODUCT_NAME := potato_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
