@@ -21,19 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Ancient stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-CUSTOM_BUILD_TYPE := OFFICIAL
+# Inherit some common MSM-Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-PRODUCT_NAME := aosp_fajita
+PRODUCT_NAME := xtended_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -44,11 +36,8 @@ TARGET_HAS_FOD := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
-TARGET_VENDOR_PRODUCT_NAME := OnePlus6T
-TARGET_VENDOR_DEVICE_NAME := OnePlus6T
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus6T \
+    PRODUCT_DEVICE=OnePlus6T \
     PRODUCT_NAME=OnePlus6T 
 
 XTENDED_MAINTAINER := AshutoshSundresh
