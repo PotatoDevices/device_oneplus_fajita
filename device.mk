@@ -36,8 +36,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# FOD Animations
+# FOD 
 EXTRA_FOD_ANIMATIONS := true
+TARGET_HAS_FOD := true
 
 # Fingerprint
 PRODUCT_PACKAGES += \
