@@ -36,6 +36,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# FOD Animations
+EXTRA_FOD_ANIMATIONS := true
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     lineage.biometrics.fingerprint.inscreen@1.0-service.oneplus_fajita \
