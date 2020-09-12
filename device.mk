@@ -46,9 +46,6 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.fingerprint.extension@1.0 \
     vendor.oneplus.hardware.display@1.0
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.fod.night_mode_disabled=true
-
 # Permissions
 PRODUCT_COPY_FILES += \
      vendor/colt/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
