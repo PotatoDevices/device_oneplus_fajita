@@ -21,15 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common MSM-Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := xtended_fajita
+PRODUCT_NAME := colt_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := ONEPLUS A6013
+PRODUCT_MODEL := ONEPLUS A6010
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -37,4 +37,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus6T \
     PRODUCT_NAME=OnePlus6T 
 
-XTENDED_MAINTAINER := AshutoshSundresh
+COLT_DEVICE_MAINTAINER := Ziauddin_Sameer
