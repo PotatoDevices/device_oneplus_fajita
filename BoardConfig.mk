@@ -35,8 +35,5 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_fajita
 TARGET_RECOVERY_DEVICE_MODULES := libinit_fajita
 
-# Prebuilt TWRP recovery
-TARGET_PREBUILT_RECOVERY_RAMDISK := $(DEVICE_PATH)/ramdisk-recovery.zip
-
 # inherit from the proprietary version
 -include vendor/oneplus/fajita/BoardConfigVendor.mk
