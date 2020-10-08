@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Colt stuff.
-$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+# Inherit some common POTATO stuff.
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-PRODUCT_NAME := colt_fajita
+PRODUCT_NAME := potato_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -37,4 +37,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=OnePlus6T \
     PRODUCT_NAME=OnePlus6T 
 
-COLT_DEVICE_MAINTAINER := Ziauddin_Sameer

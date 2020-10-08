@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_fajita.mk
+    $(LOCAL_DIR)/potato_fajita.mk
 
 COMMON_LUNCH_CHOICES := \
-    colt_fajita-user \
-    colt_fajita-userdebug \
-    colt_fajita-eng
+    potato_fajita-user \
+    potato_fajita-userdebug \
+    potato_fajita-eng
